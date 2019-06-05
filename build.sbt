@@ -1,4 +1,4 @@
-organization := "com.yang_bo"
+organization := "com.yang-bo"
 
 name := "OverriddenClassLoader"
 
