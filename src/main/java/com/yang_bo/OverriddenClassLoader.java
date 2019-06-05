@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLStreamHandlerFactory;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Enumeration;
-import java.util.List;
 import java.util.regex.Pattern;
 
 /**
@@ -25,19 +25,19 @@ public class OverriddenClassLoader extends URLClassLoader {
         super(urls, parent, factory);
     }
 
-    protected List<Pattern> getOverriddenClasses() {
+    protected Collection<Pattern> getOverriddenClasses() {
         return Collections.singletonList(Pattern.compile(".*"));
     }
 
-    protected List<Pattern> getExcludeClasses() {
+    protected Collection<Pattern> getExcludeClasses() {
         return Collections.emptyList();
     }
 
-    protected List<Pattern> getOverriddenResources() {
+    protected Collection<Pattern> getOverriddenResources() {
         return Collections.singletonList(Pattern.compile(".*"));
     }
 
-    protected List<Pattern> getExcludeResources() {
+    protected Collection<Pattern> getExcludeResources() {
         return Collections.emptyList();
     }
 
