@@ -5,4 +5,4 @@
 [![Javadoc](https://javadoc.io/badge/com.yang-bo/overriddenclassloader.svg?label=javadoc)](https://javadoc.io/page/com.yang-bo/overriddenclassloader/latest/com/yang_bo/OverriddenClassLoader.html)
 
 
-**OverriddenClassLoader** is a Java library to provide the class loader that always load some classes or resources even if they can be loaded from the parent class loader.
+**OverriddenClassLoader** is a Java library to provide the class loader that always load some classes or resources even if they are already loaded from the parent class loader.
